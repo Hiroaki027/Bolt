@@ -121,10 +121,11 @@ h1 {
 .article_inner {
   display: flex;
   flex-direction: column;
+  padding-top: 60px;
+  padding-bottom: 70px;
 }
 
 .work_title {
-  margin-top: 60px;
   margin-bottom: 40px;
   font-size: 24px;
   color: #333;
@@ -139,11 +140,12 @@ h1 {
 .sample_img {
   margin-right: 100px;
   margin-bottom: 80px;
+  opacity: 0.7;
   transition: opacity 0.3s;
 }
 
 .sample_img:hover {
-  opacity: 0.7;
+  opacity: 1;
 }
 
 .sample_img:nth-child(3n) {
@@ -160,7 +162,6 @@ h1 {
   align-items: center;
   text-align: center;
   margin-top: 90px;
-  margin-bottom: 70px;
 }
 
 .Email_detail {
@@ -192,13 +193,14 @@ h1 {
 .skills_section_inner {
   display: flex;
   flex-direction: column;
+  padding-top: 70px;
+  padding-bottom: 100px;
 }
 
 .skills_title {
   color: #fff;
   font-size: 24px;
   text-align: center;
-  margin-top: 70px;
   margin-bottom: 50px;
 }
 
@@ -212,7 +214,6 @@ h1 {
   flex-direction: column;
   text-align: center;
   color: #fff;
-  margin-bottom: 100px;
   margin-right: 180px;
 }
 
@@ -261,7 +262,11 @@ h1 {
 
 @media screen and (max-width: 1199px){
   .inner {
-    width: 90%;
+    width: 97%;
+  }
+
+  .can_do_section {
+    padding-bottom: 25px;
   }
 
   .can_do_section_detail {
@@ -276,10 +281,6 @@ h1 {
     margin-bottom: 20px;
   }
 
-  .detail {
-    margin-bottom: 25px;
-  }
-
   .images {
     display: flex;
     flex-wrap: wrap;
@@ -289,7 +290,6 @@ h1 {
 
   .sample_img {
     margin: 0;
-    transition: opacity 0.3s;
   }
   .sample_img:nth-child(3n) {
     margin: 0 auto;
@@ -318,8 +318,12 @@ h1 {
   }
 
   .circle_name {
-    margin-bottom: 80px;
+    margin-bottom: 88px;
     margin-right: 0;
+  }
+
+  .circle_name:last-child {
+    margin-bottom: 0px;
   }
 
   .sample_circle {
@@ -342,6 +346,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
     padding: 10px;
     width: 45px;
     border: solid 1px #c0c0c0;
