@@ -16,6 +16,7 @@ header {
   position: sticky;
   top: 0;
   background-color: #fff;
+  z-index: 100;
 }
 
 .header_inner {
@@ -361,6 +362,9 @@ h1 {
     margin-bottom: 5px;
   }
 
+  #button_hamburger span:last-child{ 
+    margin-bottom: 0;
+  }
   .theme {
     padding: 0;
   }
